@@ -26,21 +26,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest",
-      "eslint:recommended",
-      "plugin:react/recommended"
-    ],
-    "env": {
-      "browser": true
-    },
-    "parser": "@babel/eslint-parser",
-    "rules": {
-      "react/jsx-indent": ["ERROR", 2]
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
