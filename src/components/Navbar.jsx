@@ -11,7 +11,7 @@ import { Cart, Chat, Notification, UserProfile } from '.';
 
 const NavButton = ({title, customFunc, icon, color, dotColor}) => {
     return (
-    <TooltipComponent content={title} position='BottomCenter'>
+    <TooltipComponent content={title} position='BottomCenter' cssClass='my-tooltip'>
       <button
        type='button'
        onClick={() => customFunc()}

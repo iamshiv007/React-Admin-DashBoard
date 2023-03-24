@@ -1,5 +1,5 @@
 import React, { useEffect} from 'react'
-import { Navbar, Sidebar } from './components'
+import { Navbar, Sidebar, ThemeSettings } from './components'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
@@ -7,7 +7,7 @@ import { useStateContext } from './contexts/ContextProvider'
 
 
 export const App = () => {
-  const { currentColor, setCurrentColor, currentMode, setCurrentMode, activeMenu, themeSetting, setThemeSetting } = useStateContext()
+  const { currentColor, setCurrentColor, currentMode, setCurrentMode, activeMenu, themeSettings, setThemeSettings } = useStateContext()
   
   useEffect(() => {
     const currentThemeColor = localStorage.getItem('colorMode')
@@ -19,17 +19,17 @@ export const App = () => {
   }, [])
 
   return (
-    <div className={currentColor === 'Dark' ? 'dark' : ''}>
+    <div className={currentMode === 'Dark' ? 'dark' : ''}>
         <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
-          <div className="fixed right-4 bottom-4" style={{ zIndex:'1000' }}>
+          <div className="fixed right-4 bottom-4" style={{ zIndex:'' }}>
             <TooltipComponent
             content='Settings'
             position='Top'
             >
               <button
               type='button'
-              onClick={() => setThemeSetting(true)}
+              onClick={() => setThemeSettings(true)}
               style={{ backgroundColor:currentColor, borderRadius:'50%'}}
               className='text-3xl text-white p-3 drop-shadow-xl hover:bg-light-gray'
               >
@@ -57,7 +57,7 @@ export const App = () => {
               <Navbar/>
             </div>
             <div>
-              {/* {themeSetting  && <ThemeSetting/>} */}
+              {themeSettings  && <ThemeSettings/>}
 
               <Routes>
                 {/* dashboard */}

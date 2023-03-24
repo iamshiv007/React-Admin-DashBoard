@@ -8,3 +8,9 @@ body{
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.my-tooltip{
+    background-color: rgb(217, 188, 247);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
