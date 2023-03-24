@@ -7,7 +7,7 @@ import { chatData } from '../data/dummy'
 const Notification = () => {
     const  { currentColor } = useStateContext()
   return (
-    <div className='nav-item absolute right-5 md:rigth-40 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg w-96'>
+    <div className='nav-item absolute right-5 md:rigth-40 top-16 bg-white dark:bg-[#42464D] p-8 rounded-lg md:w-96'>
         <div className="flex items-center justify-between">
             <div className="flex gap-3">
                 <p className='font-semibold text-lg dark:text-gray-200'>Notifications</p>

@@ -1,5 +1,5 @@
 import React, { useEffect} from 'react'
-import { Navbar, Sidebar, ThemeSettings } from './components'
+import { Footer, Navbar, Sidebar, ThemeSettings } from './components'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
@@ -38,7 +38,7 @@ export const App = () => {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white z-10">
               <Sidebar/>
             </div>
           ) : (
@@ -64,6 +64,7 @@ export const App = () => {
                 <Route path='/'/>
               </Routes>
             </div>
+            <Footer/>
           </div>
         </div>
         </BrowserRouter>

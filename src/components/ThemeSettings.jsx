@@ -9,7 +9,7 @@ const ThemeSettings = () => {
     const { setColor, setMode, currentMode, currentColor, setThemeSettings } = useStateContext()
   return (
     <div className='bg-half-transparent w-screen fixed nav-item top-0 right-0'>
-        <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] w-400">
+        <div className="float-right h-screen dark:text-gray-200 bg-white dark:bg-[#484B52] md:w-400 w-350">
             <div className="flex justify-between items-center p-4 ml-4">
                 <p className="font-semibold text-lg">Settings</p>
                 <button
@@ -47,7 +47,8 @@ const ThemeSettings = () => {
                      <label htmlFor='dark' className='ml-2 text-md cursor-pointer'>Dark</label>
                      </div>
                 </div>
-                <div className="border-t-1 p-4 border-color ml-4">
+                </div>
+                <div className="border-t-1 border-color p-4 ml-4">
                     <p className='font-semibold text-xl'>Theme Colors</p>
                     <div className="flex gap-3">
                         {themeColors.map((item, index) => 
@@ -69,7 +70,6 @@ const ThemeSettings = () => {
                         )}
                     </div>
                 </div>
-            </div>
         </div>
     </div>
   )

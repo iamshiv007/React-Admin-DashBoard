@@ -8,7 +8,7 @@ import avatar from '../data/avatar.jpg'
 const UserProfile = () => {
     const { currentColor } = useStateContext()
   return (
-    <div className='nav-item right-1 top-16 absolute bg-white dark:bg-[#42464D] p-8 rounded-lg w-96'>
+    <div className='nav-item right-1 top-16 absolute bg-white dark:bg-[#42464D] p-8 rounded-lg md:w-96'>
         <div className="justify-between flex items-center">
             <p className="font-semibold text-lg dark:text-gray-200">User Profile</p>
             <Button
