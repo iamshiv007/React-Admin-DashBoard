@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { useStateContext } from './contexts/ContextProvider'
-import { Ecommerce, Orders, Employees, Customers, Calendar, Kanban, Editor, ColorPicker} from './pages'
+import { Ecommerce, Orders, Employees, Customers, Calendar, Kanban, Editor, ColorPicker, Line, Pie, StackedChart, Area, Bar, ColorMapping, Financial, Pyramid } from './pages'
 
 
 export const App = () => {
@@ -67,10 +67,20 @@ export const App = () => {
                 <Route path='/orders' element={<Orders/>} />
                 <Route path='/employees' element={<Employees/>} />
                 <Route path='/customers' element={<Customers/>} />
+                {/* App */}
                 <Route path='/calendar' element={<Calendar/>} />
                 <Route path='/kanban' element={<Kanban/>} />
                 <Route path='/editor' element={<Editor/>} />
                 <Route path='/color-picker' element={<ColorPicker/>} />
+                {/* Charts */}
+                <Route path='/line' element={<Line/>} />
+                <Route path='/pie' element={<Pie/>} />
+                <Route path='/stacked' element={<StackedChart/>} />
+                <Route path='/area' element={<Area/>} />
+                <Route path='/bar' element={<Bar/>} />
+                <Route path='/color-mapping' element={<ColorMapping/>} />
+                <Route path='/financial' element={<Financial/>} />
+                <Route path='/pyramid' element={<Pyramid/>} />
               </Routes>
             </div>
             <Footer/>
