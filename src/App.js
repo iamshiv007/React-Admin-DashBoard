@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { useStateContext } from './contexts/ContextProvider'
-import { Ecommerce, Orders, Employees, Customers} from './pages'
+import { Ecommerce, Orders, Employees, Customers, Calendar, Kanban} from './pages'
 
 
 export const App = () => {
@@ -66,7 +66,9 @@ export const App = () => {
                 <Route path='/ecommerce' element={<Ecommerce/>} />
                 <Route path='/orders' element={<Orders/>} />
                 <Route path='/employees' element={<Employees/>} />
-                <Route path='/Customers' element={<Customers/>} />
+                <Route path='/customers' element={<Customers/>} />
+                <Route path='/calendar' element={<Calendar/>} />
+                <Route path='/kanban' element={<Kanban/>} />
               </Routes>
             </div>
             <Footer/>
