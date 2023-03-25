@@ -32,7 +32,7 @@ const DropDown = ({ currentMode }) => (
   </div>
   )
 
-const Eccomerce = () => {
+const Ecommerce = () => {
   const { currentColor, currentMode } = useStateContext()
 
   return (
@@ -397,4 +397,4 @@ const Eccomerce = () => {
   )
 }
 
-export default Eccomerce
+export default Ecommerce
