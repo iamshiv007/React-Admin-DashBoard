@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { useStateContext } from './contexts/ContextProvider'
+import Eccomerce from './pages/Eccomerce'
 
 
 export const App = () => {
@@ -61,7 +62,7 @@ export const App = () => {
 
               <Routes>
                 {/* dashboard */}
-                <Route path='/'/>
+                <Route path='/' element={<Eccomerce/>} />
               </Routes>
             </div>
             <Footer/>
