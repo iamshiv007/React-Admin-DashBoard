@@ -10,7 +10,7 @@ const CustomColorPicker  = ({ id, mode }) => <ColorPickerComponent id={id} mode=
 
 const ColorPicker = () => {
   return (
-    <div className='mt-24 p-2 m-2 md:p-10 md:m-10 rounded-2xl bg-gray-200'>
+    <div className='mt-24 p-2 pb-4 m-2 md:p-10 md:m-10 md:rounded-3xl rounded-xl bg-gray-200'>
       <Header category='App' title='Color Picker' />
       <div className="text-center">
         <div id='preview' />

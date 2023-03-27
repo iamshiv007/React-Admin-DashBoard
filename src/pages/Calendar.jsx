@@ -20,7 +20,7 @@ const Calendar = () => {
 
 
   return (
-    <div className='p-2 m-2 mt-24 md:p-10 md:m-10 bg-gray-200 rounded-3xl'>
+    <div className='p-2 pb-4 m-2 mt-24 md:p-10 md:m-10 bg-gray-200 md:rounded-3xl rounded-xl'>
       <Header category="App" title='Calendar' />
       <ScheduleComponent
       height='650px'
